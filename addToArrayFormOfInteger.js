@@ -13,7 +13,7 @@ function addToArrayForm(num, k) {
     
     let convert = num => Number(num);
       
-    var res = Array.from(String(sum), convert);
+    let res = Array.from(String(sum), convert);
     
     return res
 }
