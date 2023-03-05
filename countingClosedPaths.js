@@ -1,3 +1,10 @@
+/*
+ * Complete the 'closedPaths' function below.
+ *
+ * The function is expected to return an INTEGER.
+ * The function accepts INTEGER number as parameter.
+ */
+
 function closedPaths(number) {
     let convertNumToArray = num => Number(num)
     let numArr = Array.from(String(number), convertNumToArray)
