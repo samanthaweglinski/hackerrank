@@ -9,11 +9,11 @@
 
 function addToArrayForm(num, k) {
     let numStr = num.join("")
-    let sum = Number(numStr) + k
+    let sum = BigInt(numStr) + BigInt(k)
     
     let convert = num => Number(num);
       
     let res = Array.from(String(sum), convert);
     
-    return res
+    return res   
 }
