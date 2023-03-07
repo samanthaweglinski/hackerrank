@@ -18,18 +18,19 @@ O: 2
 
 */
 function balancedSum(arr) {
-    for (let i = 1; i < arr.length - 1; i++) { 
-        let leftSum = 0 
-        let rightSum = 0 
+    for (let i = 0; i < arr.length; i++) { // 
+        let leftSum = 0 // 
+        let rightSum = 0 // 0
         
-        for (let j = 0; j < i; j++) { 
-            leftSum += arr[j]
+        for (let j = 0; j < i; j++) { // 0
+            leftSum += arr[j] 
         }
         
-        for (let j = arr.length - 1; j > i; j--) { 
+        for (let j = arr.length - 1; j > i; j--) { // 0
             rightSum += arr[j]
         }
 
         if (leftSum == rightSum) return i
     }
+    return -1
 }
